@@ -84,7 +84,7 @@ export class HeartBeat {
 
   private rejectManulStop() {
     if (this.manulStopHandler) {
-      this.manulStopHandler[0]();
+      this.manulStopHandler[1]();
       this.manulStopHandler = null;
     }
   }

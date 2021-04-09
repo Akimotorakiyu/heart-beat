@@ -10,12 +10,12 @@ const heartBeat = new HeartBeat(
     console.log("fail");
   },
   async () => {
-    await sleep(Math.random() * 2000);
+    await sleep(900);
   }
 );
 
 heartBeat.start();
 
-await sleep(10000);
+await sleep(3600);
 
 heartBeat.stop();
